@@ -10,15 +10,6 @@ function addmissionote(e) {
         document.querySelector('#dateinput').value !== "" &&
         document.querySelector('#hourinput').value !== "") {
 
-            document.addEventListener('DOMContentLoaded', () => {
-                const dateInput = document.querySelector('#dateinput');
-                const today = new Date();
-                const yyyy = today.getFullYear();
-                const mm = String(today.getMonth() + 1).padStart(2, '0'); 
-                const dd = String(today.getDate()).padStart(2, '0'); 
-                dateInput.value = `${yyyy}-${mm}-${dd}`;
-            });
-
         let missiond = document.querySelector('#missiondetails').value;
         let deadlinedate = String(document.querySelector('#dateinput').value);
         let deadlinehour = document.querySelector('#hourinput').value;
@@ -62,7 +53,6 @@ function clearform() {
 }
 
 function showmission() {
-document.querySelector('input[type="date"]').setAttribute('lang', 'en');
     let notesarr = JSON.parse(localStorage.getItem('missions')) || [];
     let datearr = JSON.parse(localStorage.getItem('dates')) || [];
     const currentDateTime = new Date();
