@@ -45,8 +45,8 @@ input{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100%; /* Make the form span the full width */
-    max-width: 1200px; /* Optional: Limit maximum width on larger screens */
+    width: 100%;
+    max-width: 1200px; 
  }
 
  .forminputs{ 
@@ -133,9 +133,9 @@ background-color: #FAD8D6;
     width: 60px;
     height: 40px;
     padding: 10px;
-    position: absolute; /* מיקום מוחלט בתוך #formfield */
-    top: 0px; /* מרחק מהחלק העליון */
-    right: 250px; /* מרחק מהחלק הימני */
+    position: absolute; 
+    top: 0px; 
+    right: 250px; 
     cursor: pointer;
 
 }
