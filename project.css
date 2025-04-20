@@ -1,0 +1,513 @@
+h1{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #69306D;
+    font-weight: bolder; 
+}
+
+
+#title1{
+    position: relative;
+    font-size: larger;
+    top: 2px;
+    right: 225px;
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+input{
+    height: 20px;
+    text-align: center;
+    width: 20px;
+    margin-left: auto;   
+    margin-right: auto;
+}
+#formfield {
+    width: 1525px;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("notebookimg.jpg.avif");
+    background-repeat: no-repeat;
+    background-position: center; 
+    padding-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+    form{
+    gap: 4.5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Make the form span the full width */
+    max-width: 1200px; /* Optional: Limit maximum width on larger screens */
+ }
+
+ .forminputs{ 
+   width: 300px;
+   height: 26px;
+   padding: 6px 20px;
+   font-size: 16px;
+ }
+ #missiondetails{
+    width: 570px;
+    height: 145px;
+    left: 10px;
+    background-color: #BBE7E8;
+    border-radius: 8px;
+    top: 2px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .deadlineb{
+    width: 205px;
+    height: 24px;
+    background: #A0D2DB;
+    border-radius: 8px;
+    top: 2px; 
+ }
+.datescontainer{
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    gap: 50px;
+    margin-top: 25px;
+    margin-right: -72px;
+}
+#d1{
+    position: relative;
+    left: -244px;  
+}
+#d2{
+    position: relative;
+    left: -234px;
+}
+#dateinput{
+margin-right: 20px;
+}
+#hourinput{
+margin-left: 20px;
+}
+.datetitles{
+display: inline;
+margin-left: 290px;
+position: relative;
+top: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.datetitlesc{
+margin-top: 23px;
+gap: 2px;;
+}
+ label{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+position: relative;
+right: 260px;
+ }
+
+body{
+text-align: center;
+background-color: #FAD8D6;
+}
+
+#addnotebtn{
+    background-image: url("plus.png");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #A0BFDB;
+    border: none;
+    border-radius: 0px 0px 6px 6px;
+    align-self: center;
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+    position: absolute; /* מיקום מוחלט בתוך #formfield */
+    top: 0px; /* מרחק מהחלק העליון */
+    right: 250px; /* מרחק מהחלק הימני */
+    cursor: pointer;
+
+}
+.notesetting {
+    display: flex;
+    margin: 0px;
+    font-size: smaller;
+    direction: ltr;
+    background-color: lightcyan; 
+    border-top: 1px solid #353638;
+    font-family: cursive;
+    text-indent: 6px;  
+}
+      
+        
+.fadeIn {
+    animation: fadeIn 1s linear 1;
+   
+}
+@keyframes fadeIn {
+    0% {
+        transform: translateY(25%);
+        opacity: 0;
+    
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+}
+.fadeOut {
+    animation: fadeOut 1s linear 1;
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(25%);
+        opacity: 0;
+    }
+}
+
+#notescontainer{
+    max-width: 85%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 30px;
+}
+#notedetails {
+    max-height: 150px; 
+    overflow-y: auto;
+    color: #69306D;
+    font-family: cursive;
+}
+
+#notetitle{
+    color: #69306D;
+    font-size: medium;
+    font-family:cursive;
+    margin-top: 9px;
+}   
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: auto; 
+    position: relative;
+    height: auto; 
+    display: 'flex';
+    background-color:#DDBDD5;
+    width: 230px;
+    left: 250px;
+    border: 3px solid #69306D;
+    border-radius: 8px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card-footer {
+    width: 100%;
+    border-top: 1px solid #353638;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    color: white;
+    background-color: #69306D;
+}
+
+.closebtn{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid #69306D;
+    border-radius: 50px;
+    margin-left: 80%;
+    width: 20px;
+    height: 20px;
+    background-color: #BBE7E8;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: absolute; 
+    top: 5px; 
+    right: 5px;
+    cursor: pointer;
+    display: none;
+    background-image: url("xicon.jpg");
+    background-size: cover;
+}
+#closebtnid {
+width: 20px;
+height: 20px;
+}
+#resetbtn{
+    background-image: url("refresh.png");
+    background-color: #A0BFDB;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-left: 2px solid white;
+    border-top: 2px solid  #A0BFDB;
+    border-bottom: 2px solid  #A0BFDB;
+    border-radius: 0px 0px 0px 0px;
+    border-right: 2px solid #A0BFDB;
+    align-self: center;
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+    position: absolute; 
+    top: 0px; 
+    right: 192px; 
+    cursor: pointer;
+}
+@media(max-width: 1225px){
+    #notescontainer{
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    #formfield {
+        width: 90%;
+        height: 300px;
+        flex-direction: column;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    #title1{
+        position: relative;
+        right: 0px;
+        top: 0px;
+        text-wrap: nowrap;
+    }
+    
+
+    #missiondetails {
+        width: 85%; 
+        margin: 10px auto;
+        top: -10px;
+    }
+  
+    #resetbtn {
+        right: 0px;
+    }
+    #addnotebtn{
+        right: 58px;
+    }
+
+    .card {
+        margin: 10px 0;
+        left: 0;
+    }
+    #notescontainer{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1{
+        text-align: center;
+    }
+  input{
+        width: 100%; 
+        margin: 5px 0; 
+    }
+    .forminputs{
+        position: absolute;
+
+    }
+    #dateinput{
+    left: 75px;
+    top: 320px;
+    height: 15px;
+    width: 120px;
+    }
+    #hourinput{
+        left: 400px;
+        top: 320px;
+        height: 15px;
+        width: 120px;
+    }
+    #d1{
+        position: absolute;
+        left: -210px;
+        top: 290px;
+    }
+    #d2{
+        position: absolute;
+        left: 130px;
+        top: 290px;
+    }
+@media (max-width: 620px) {
+    body {
+        font-size: 14px; 
+    }
+    #d1{
+        position: absolute;
+        left: -165px;
+        top: 190px;
+    }
+    #d2{
+        position: absolute;
+        left: 10px;
+        top: 190px;
+    }
+    #dateinput{
+        position: absolute;
+        left: 120px;
+        top: 215px;
+        height: 20px;
+        width: 20px;
+    }
+    #hourinput{
+        top: 215px;
+        height: 20px;
+        width: 29px;
+        left: 260px;
+
+    }
+
+    #formfield {
+        padding: 10px;
+        flex-direction: column;
+    }
+    input{
+        width: 100%;
+    }
+    #addnotebtn, #resetbtn {
+        width: 40px;
+        height: 40px;
+    }
+    #addnotebtn{
+        right: 38px;
+    }
+
+    .card {
+        width: 100%; 
+        margin: 10px 0;
+        left: 0;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+    form{
+        gap: 2px
+    }
+    #missiondetails{
+        position: absolute;
+        width: 80%;
+        height: 100px;
+        left: 18px;
+        top: 54px;
+    }
+    #title1{
+        position: relative;
+        right: 0px;
+        top: -90px;
+        text-wrap: nowrap;
+    }
+    #notescontainer{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    }
+  
+@media (max-width: 480px){
+    #title1 {
+        text-align: center;
+        right: -20px; 
+        display: flex;
+        z-index: 1;
+        top: -85px;
+        justify-content: flex-start; 
+    }
+    
+    #missiondetails{
+        position: absolute;
+        width: 50%;
+        height: 100px;
+        left: 25px;
+        top: 54px;
+    }
+    #notescontainer{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+#dateinput{
+    position: absolute;
+    left: 30px;
+    top: 215px;
+    height: 20px;
+    width: 45%;
+}
+#hourinput{
+    top: 290px;
+    height: 12px;
+    left: 10px;
+    position: absolute;
+    width: 45%;
+
+}
+
+#d1{
+    position: absolute;
+    left: -250px;
+    top: 190px;
+}
+#d2{
+    position: absolute;
+    left: -250px;
+    top: 270px;
+}
+.datescontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+}
+}
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

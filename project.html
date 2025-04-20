@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body onload="showmission(); setmindate();" >
+    <h1 id="maintitle">MY TASK BOARD</h1>
+    <div id="formfield">
+        
+        <form>
+            <label id="title1">Mission details:</label>
+            <textarea required id="missiondetails" class="forminputs" placeholder="write your mission content here"></textarea>
+            <div class="datetitlesc">
+            <a id="d1" class="datetitles">Date:</a>
+            <a id= "d2" class="datetitles"> Hour:</a>
+        </div>
+            <div class="datescontainer">
+            <input required id="dateinput" class="forminputs deadlineb" type="date" >
+            <input required id="hourinput" class="forminputs deadlineb" type="time" >
+        </div>
+            <button id="addnotebtn" onclick="addmissionote(); setTimeout(clearform, 100);"></button>
+        </form> 
+            <button id="resetbtn" onclick="clearform()" class="btn"> </button>
+
+       
+    </div>
+
+   
+    <div id="notescontainer">
+
+
+    </div>
+    
+    <script src="project.js"></script>
+
+</body>
+</html>
